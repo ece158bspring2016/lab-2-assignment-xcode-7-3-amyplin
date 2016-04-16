@@ -14,6 +14,10 @@
 		E10E01F41CBEFAB7000F5F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10E01F21CBEFAB7000F5F9B /* LaunchScreen.storyboard */; };
 		E10E01FF1CBEFAB7000F5F9B /* RatingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E01FE1CBEFAB7000F5F9B /* RatingsTests.swift */; };
 		E10E020A1CBEFAB7000F5F9B /* RatingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E02091CBEFAB7000F5F9B /* RatingsUITests.swift */; };
+		E10E02181CBF026C000F5F9B /* Images in Resources */ = {isa = PBXBuildFile; fileRef = E10E02171CBF026C000F5F9B /* Images */; };
+		E10E34F71CC2B8520083D484 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E34F61CC2B8520083D484 /* PlayersViewController.swift */; };
+		E10E34F91CC2B87A0083D484 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E34F81CC2B87A0083D484 /* Player.swift */; };
+		E10E34FB1CC2B9CD0083D484 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E34FA1CC2B9CD0083D484 /* SampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		E10E02051CBEFAB7000F5F9B /* RatingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RatingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10E02091CBEFAB7000F5F9B /* RatingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsUITests.swift; sourceTree = "<group>"; };
 		E10E020B1CBEFAB7000F5F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10E02171CBF026C000F5F9B /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		E10E34F61CC2B8520083D484 /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		E10E34F81CC2B87A0083D484 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		E10E34FA1CC2B9CD0083D484 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		E10E01DD1CBEFAB6000F5F9B = {
 			isa = PBXGroup;
 			children = (
+				E10E34F61CC2B8520083D484 /* PlayersViewController.swift */,
 				E10E01E81CBEFAB7000F5F9B /* Ratings */,
 				E10E01FD1CBEFAB7000F5F9B /* RatingsTests */,
 				E10E02081CBEFAB7000F5F9B /* RatingsUITests */,
@@ -100,7 +109,10 @@
 				E10E01E91CBEFAB7000F5F9B /* AppDelegate.swift */,
 				E10E01EB1CBEFAB7000F5F9B /* ViewController.swift */,
 				E10E01ED1CBEFAB7000F5F9B /* Main.storyboard */,
+				E10E34F81CC2B87A0083D484 /* Player.swift */,
+				E10E34FA1CC2B9CD0083D484 /* SampleData.swift */,
 				E10E01F01CBEFAB7000F5F9B /* Assets.xcassets */,
+				E10E02171CBF026C000F5F9B /* Images */,
 				E10E01F21CBEFAB7000F5F9B /* LaunchScreen.storyboard */,
 				E10E01F51CBEFAB7000F5F9B /* Info.plist */,
 			);
@@ -229,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10E02181CBF026C000F5F9B /* Images in Resources */,
 				E10E01F41CBEFAB7000F5F9B /* LaunchScreen.storyboard in Resources */,
 				E10E01F11CBEFAB7000F5F9B /* Assets.xcassets in Resources */,
 				E10E01EF1CBEFAB7000F5F9B /* Main.storyboard in Resources */,
@@ -256,8 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10E34F91CC2B87A0083D484 /* Player.swift in Sources */,
 				E10E01EC1CBEFAB7000F5F9B /* ViewController.swift in Sources */,
 				E10E01EA1CBEFAB7000F5F9B /* AppDelegate.swift in Sources */,
+				E10E34FB1CC2B9CD0083D484 /* SampleData.swift in Sources */,
+				E10E34F71CC2B8520083D484 /* PlayersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +419,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Amy-Lin.Ratings";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -414,6 +431,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Amy-Lin.Ratings";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -484,6 +502,7 @@
 				E10E02101CBEFAB7000F5F9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E10E02111CBEFAB7000F5F9B /* Build configuration list for PBXNativeTarget "RatingsTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +511,7 @@
 				E10E02131CBEFAB7000F5F9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E10E02141CBEFAB7000F5F9B /* Build configuration list for PBXNativeTarget "RatingsUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +520,7 @@
 				E10E02161CBEFAB7000F5F9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
